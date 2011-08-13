@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from add.forms import RegistrationForm
+from addFlair.forms import RegistrationForm
 from django.shortcuts import render_to_response
 from django.core.context_processors import csrf
 
