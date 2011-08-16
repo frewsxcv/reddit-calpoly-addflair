@@ -2,11 +2,12 @@
    <head>
       <title>/r/calpoly Flair Request</title>
    </head>
-   <body>
+   <body>   
       <form action="/add/" method="post">
          {% csrf_token %}
          {{ form.as_p }}
          <input type="submit" value="Submit" />
       </form>
+      <p>If your major is not listed here, email coreyf at rwell dot org</p>
    </body>
 </html>
