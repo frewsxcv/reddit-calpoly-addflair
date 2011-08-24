@@ -26,11 +26,12 @@ def gen_url(form, confirm_num):
     username = form.cleaned_data['username']
     year = form.cleaned_data['year']
     major = form.cleaned_data['major']
+    base_url = 'http://reddit.com/message/compose/?'
     msg = "Send this message to confirm your /r/CalPoly flair.\n"
+    msg += "Do not alter any part of this message.\n"
     msg += "Confirmation number: " + str(confirm_num)
-    args = (("to", "rCalPolyBot"), ("subject", "Add flair"), ("message", msg))
-    compose = 'http://reddit.com/message/compose/?'
-    return compose + urlencode(args)
+    args = (("to", "rCalPolyBot"), ("subject", "Add Flair"), ("message", msg))
+    return base_url + urlencode(args)
 
 
 def save_user(form, confirm_num):
