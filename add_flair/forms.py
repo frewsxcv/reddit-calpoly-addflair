@@ -1,11 +1,12 @@
 import calpoly
 
-from django import forms
+from django.forms import ModelForm
+from add_flair.models import User
 from captchaform import CaptchaField
 
 
-class RegistrationForm(forms.Form):
-    username = forms.CharField(max_length=20)
-    year = forms.ChoiceField(choices=calpoly.years())
-    major = forms.ChoiceField(choices=calpoly.majors())
+class UserForm(ModelForm):
     captcha_field = CaptchaField()
+    class Meta:
+        model = User
+        exclude = ('confirm_num', 'confirmed')
