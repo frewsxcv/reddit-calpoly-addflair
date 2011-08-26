@@ -2,11 +2,11 @@ import calpoly
 
 from django.forms import ModelForm
 from add_flair.models import User
-from captchaform import CaptchaField
+from captcha.fields import ReCaptchaField
 
 
 class UserForm(ModelForm):
-    captcha_field = CaptchaField()
+    captcha_field = ReCaptchaField()
     class Meta:
         model = User
         exclude = ('confirm_num', 'confirmed')
