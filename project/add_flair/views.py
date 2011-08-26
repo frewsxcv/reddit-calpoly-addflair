@@ -28,8 +28,8 @@ def gen_url(form, confirm_num):
     major = form.cleaned_data['major']
     base_url = 'http://reddit.com/message/compose/?'
     msg = "Send this message to confirm your /r/CalPoly flair.\n"
-    msg += "Do not alter any part of this message.\n"
-    msg += "Confirmation number: " + str(confirm_num)
+    msg += "Confirmation number: " + str(confirm_num) + "\n"
+    msg += "Do not alter any part of this message."
     args = (("to", "rCalPolyBot"), ("subject", "Add Flair"), ("message", msg))
     return base_url + urlencode(args)
 
