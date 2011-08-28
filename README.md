@@ -1,4 +1,4 @@
-# reddit-calpoly-addFlair
+# reddit-calpoly-addflair
 A simple web application that allows users in the 
 [Cal Poly subreddit](http://calpoly.reddit.com) to add flair to their username
 
