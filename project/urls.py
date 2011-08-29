@@ -4,6 +4,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^add/', 'add_flair.views.add'),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^flair/add/', 'add_flair.views.add'),
+    url(r'^flair/admin/', include(admin.site.urls)),
 )
