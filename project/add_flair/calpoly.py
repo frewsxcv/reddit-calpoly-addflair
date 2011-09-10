@@ -94,11 +94,9 @@ def majors():
     """
     Returns a list of tuples of Cal Poly majors
     """
-    majors = []
     for college in colleges:
-        for major in college[1]:
-            majors.append(major)
-            majors.sort(key=lambda m: m[1])
+        [major for major in college[1]]
+    majors.sort(key=lambda m: m[1])
     return majors
 
 
