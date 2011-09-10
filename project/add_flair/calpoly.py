@@ -82,6 +82,7 @@ colleges = (
             ('LS', 'Liberal Studies'),
             ('MATH', 'Mathematics'),
             ('MICRO', 'Microbiology'),
+            ('PCS', 'Polymers & Coatings Science'),
             ('PHYS', 'Physics'),
             ('STAT', 'Statistics')
         )
