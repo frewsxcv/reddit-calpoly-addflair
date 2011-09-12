@@ -1,5 +1,5 @@
-from add_flair.forms import UserForm
-from add_flair.models import User
+from register.forms import UserForm
+from register.models import User
 from django.shortcuts import render_to_response, redirect
 from django.core.context_processors import csrf
 from urllib import urlencode

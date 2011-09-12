@@ -2,9 +2,9 @@
 
 from reddit import Reddit
 from django.core.management.base import BaseCommand, CommandError
-import add_flair.calpoly as calpoly
-from add_flair.models import User
-from add_flair.flairclient import FlairClient
+import register.calpoly as calpoly
+from register.models import User
+from flair.flairclient import FlairClient
 
 class Command(BaseCommand):
     args = ''

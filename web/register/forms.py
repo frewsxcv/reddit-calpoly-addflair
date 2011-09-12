@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from add_flair.models import User
+from register.models import User
 from captcha.fields import ReCaptchaField
 
 
