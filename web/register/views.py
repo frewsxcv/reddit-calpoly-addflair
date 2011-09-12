@@ -10,8 +10,7 @@ def add(request):
     if request.method == 'POST':
         form = UserForm(request.POST)
         if form.is_valid():
-            confirm_num = generate_confirm_num()
-            save_user(form, confirm_num)
+            confirm_num = save_user(form)
             return redirect(gen_url(form, confirm_num))
     else:
         form = UserForm()
@@ -34,12 +33,19 @@ def gen_url(form, confirm_num):
     return base_url + urlencode(args)
 
 
-def save_user(form, confirm_num):
+def save_user(form):
     """ Given a form object, extract and save the user in the database """
+    confirm_num = generate_confirm_num()
+    try:
+        user = User.objects.get(username=form.cleaned_data['username'])
+    except User.DoesNotExist:
+        pass
+    else:
+        user.delete()
     user = form.save(commit=False)
-    user.confirmed = False
     user.confirm_num = confirm_num
     user.save()
+    return confirm_num
 
 
 def generate_confirm_num():
