@@ -27,7 +27,7 @@ colleges = {
     # College of Architecture & Environmental Design
     'CAED': {
         'ARCE': 'Architectural Engineering',
-        'ARCH': 'Architecture ',
+        'ARCH': 'Architecture',
         'CRP': 'City and Regional Planning',
         'CM': 'Construction Management',
         'LA': 'Landscape Architecture',
