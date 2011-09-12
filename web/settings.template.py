@@ -55,7 +55,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'project.add_flair',
+    'register',
+    'flair',
 )
 LOGGING = {
     'version': 1,
