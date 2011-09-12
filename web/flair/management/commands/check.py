@@ -50,7 +50,6 @@ def get_messages():
 
 
 def add_flair(user, major, year):
-    print('meow')
     major_full = calpoly.majors()[major]
     for college, majors in calpoly.colleges.items():
         if major in majors:
