@@ -43,6 +43,7 @@ def save_user(form):
     else:
         user.delete()
     user = form.save(commit=False)
+    user.username = user.username.lower()
     user.confirm_num = confirm_num
     user.save()
     return confirm_num
