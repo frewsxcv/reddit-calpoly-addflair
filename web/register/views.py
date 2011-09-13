@@ -37,7 +37,7 @@ def save_user(form):
     """ Given a form object, extract and save the user in the database """
     confirm_num = generate_confirm_num()
     try:
-        user = User.objects.get(username=form.cleaned_data['username'])
+        user = User.objects.get(username=form.cleaned_data['username'].lower())
     except User.DoesNotExist:
         pass
     else:
