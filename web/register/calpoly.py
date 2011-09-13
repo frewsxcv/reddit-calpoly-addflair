@@ -42,6 +42,7 @@ colleges = {
     # College of Engineering
     'CENG': {
         'AERO': 'Aerospace Engineering',
+        'BMED': 'Biomedical Engineering',
         'CE': 'Civil Engineering',
         'CEENVE': 'Civil and Environmental Engineering',
         'CPE': 'Computer Engineering',
