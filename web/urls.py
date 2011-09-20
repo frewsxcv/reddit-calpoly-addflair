@@ -5,6 +5,6 @@ from register.views import add
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^reddit/calpoly/register/', add),
-    url(r'^reddit/calpoly/admin/', include(admin.site.urls)),
+    url(r'^register/', add),
+    url(r'^admin/', include(admin.site.urls)),
 )
