@@ -9,4 +9,5 @@ A simple web application that allows users in the
 `pip install reddit`  
 `pip install django-recaptcha`
 2. Edit the settings.py template to your needs
-3. Run the server
+3. Confirm the reddit login credentials in web/flair/flairclient.py and web/register/manage/commands/check.py
+4. Run the server
