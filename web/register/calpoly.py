@@ -60,6 +60,7 @@ colleges = {
     # College of Liberal Arts
     'CLA': {
         'ANTGEOG': 'Anthropology and Geography',
+        'BFA': 'Art and Design',
         'CD': 'Child Development',
         'COMS': 'Communication Studies',
         'ES': 'Comparative Ethnic Studies',
