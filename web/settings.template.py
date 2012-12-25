@@ -1,3 +1,10 @@
+REDDIT_USERNAME = "" ############
+REDDIT_PASSWORD = "" ############
+
+RECAPTCHA_PRIVATE_KEY = '' ############
+RECAPTCHA_PUBLIC_KEY = '' ############
+
+
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 ADMINS = (
@@ -75,5 +82,3 @@ LOGGING = {
         },
     }
 }
-RECAPTCHA_PRIVATE_KEY = '' ############
-RECAPTCHA_PUBLIC_KEY = '' ############

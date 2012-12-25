@@ -5,6 +5,7 @@ from django.core.management.base import BaseCommand, CommandError
 import register.calpoly as calpoly
 from register.models import User
 from flair.flairclient import FlairClient
+from settings import REDDIT_USERNAME, REDDIT_PASSWORD
 
 
 class Command(BaseCommand):
@@ -46,7 +47,7 @@ def get_conf_num(message):
 
 def get_messages():
     r = Reddit(user_agent='calpoly-flair')
-    r.login(user='rcalpolybot', password='***********')
+    r.login(user=REDDIT_USERNAME, password=REDDIT_PASSWORD)
     inbox = r.get_inbox()
     return inbox.get_messages()
 

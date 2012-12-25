@@ -9,6 +9,7 @@ import json
 import logging
 import urllib
 import urllib2
+from settings import REDDIT_USERNAME, REDDIT_PASSWORD
 
 class FlairClient:
     """A reddit session, with tools for making API calls.
@@ -116,7 +117,7 @@ class FlairClient:
         NOTE: this interacts with the terminal to get credentials
         """
         response = self._post(self._url('/api/login'),
-                              user='rcalpolybot', passwd='*********')
+            user=REDDIT_USERNAME, passwd=REDDIT_PASSWORD)
 
         # fetch modhash
         response = self._get(self._url('/api/me'))
