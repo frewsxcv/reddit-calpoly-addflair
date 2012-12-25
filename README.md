@@ -4,10 +4,6 @@ A simple web application that allows users in the
 
 
 ## Install
-1. Ensure that the Python packages [reddit](http://pypi.org/pypi/reddit) and 
-[django-repatcha](http://pypi.org/pypi/django-recaptcha) are installed  
-`pip install reddit`  
-`pip install django-recaptcha`
+1. Install the dependencies: `pip install -r requirements.txt`
 2. Edit the settings.py template to your needs
-3. Confirm the reddit login credentials in web/flair/flairclient.py and web/register/manage/commands/check.py
-4. Run the server
+3. Run the server
