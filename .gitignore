@@ -1,2 +1,3 @@
 *.pyc
-reddit_calpoly_addflair/settings.py
+addflair/settings.py
+*.sqlite
