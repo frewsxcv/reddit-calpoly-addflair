@@ -50,20 +50,21 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'addflair.urls'
 TEMPLATE_DIRS = (
     ''
 )
 INSTALLED_APPS = (
-    #'django.contrib.auth',
+    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     #'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'reddit_calpoly_addflair.register',
-    'reddit_calpoly_addflair.flair',
+    'addflair.register',
+    'addflair.flair',
+    'captcha'
 )
 LOGGING = {
     'version': 1,
