@@ -1,4 +1,4 @@
-from register.models import User
+from addflair.register.models import User
 from django.contrib import admin
 
 class UserAdmin(admin.ModelAdmin):

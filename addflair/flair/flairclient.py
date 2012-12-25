@@ -9,7 +9,7 @@ import json
 import logging
 import urllib
 import urllib2
-from settings import REDDIT_USERNAME, REDDIT_PASSWORD
+from addflair.settings import REDDIT_USERNAME, REDDIT_PASSWORD
 
 class FlairClient:
     """A reddit session, with tools for making API calls.

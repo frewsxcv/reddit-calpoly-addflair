@@ -2,10 +2,10 @@
 
 from reddit import Reddit
 from django.core.management.base import BaseCommand, CommandError
-import register.calpoly as calpoly
-from register.models import User
-from flair.flairclient import FlairClient
-from settings import REDDIT_USERNAME, REDDIT_PASSWORD
+import addflair.register.calpoly as calpoly
+from addflair.register.models import User
+from addflair.flair.flairclient import FlairClient
+from addflair.settings import REDDIT_USERNAME, REDDIT_PASSWORD
 
 
 class Command(BaseCommand):
